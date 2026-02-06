@@ -10,6 +10,8 @@ Include the following standard columns: Email Name, Sent, Delivered, Opened, and
 
 Note: The app automatically handles and removes the "Grand Total" summary rows often found at the bottom of Marketo exports.
 
+**Ignore appv2.py**
+
 **Features**
 Dynamic Filtering: Search for specific program IDs (e.g., "1008") or campaign themes.
 
@@ -26,3 +28,4 @@ Install dependencies: pip install -r requirements.txt
 
 
 Run the app: streamlit run app.py
+
