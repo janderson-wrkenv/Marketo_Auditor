@@ -86,7 +86,7 @@ def load_and_process(uploaded_file):
 # --- MAIN APP FUNCTION ---
 
 def main():
-    st.title("📊 Marketo Performance Auditor Staging Site")
+    st.title("📊 Marketo Performance Auditor")
     
     file = st.file_uploader("Upload Campaign Data (.csv, .xlsx)", type=["csv", "xlsx"])
     
@@ -289,4 +289,5 @@ def main():
             st.warning("No records match your filters or audit criteria.")
 
 if __name__ == "__main__":
+
     main()
