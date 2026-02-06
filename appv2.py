@@ -4,7 +4,7 @@ import numpy as np
 import re
 
 # --- CONFIGURATION ---
-st.set_page_config(page_title="Marketo Performance Auditor", layout="wide")
+st.set_page_config(page_title="Marketo Performance Auditor - Old", layout="wide")
 
 # Target columns for specific percentage formatting
 PCT_COLS = ["% Delivered", "% Opened", "% Clicked Email", "Clicked to Open Ratio"]
@@ -255,4 +255,5 @@ def main():
             st.warning("No records match your filters or audit criteria.")
 
 if __name__ == "__main__":
+
     main()
