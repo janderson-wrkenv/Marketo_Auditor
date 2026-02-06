@@ -246,7 +246,7 @@ def main():
                     return ['background-color: rgba(255, 75, 75, 0.4)' if fail else '' for _ in row]
                 return ['' for _ in row]
 
-            st.dataframe(filtered_df.style.apply(auditor_style, axis=1), use_container_width=True, column_config=col_config)
+            st.dataframe(filtered_df.style.apply(auditor_style, axis=1), width="stretch", column_config=col_config)
             
             csv_data = filtered_df.to_csv(index=False).encode('utf-8')
             st.download_button("💾 Export Filtered Results", data=csv_data, file_name="audited_data.csv", mime="text/csv")
