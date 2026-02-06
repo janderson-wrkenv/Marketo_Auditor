@@ -89,6 +89,7 @@ def main():
         df = st.session_state['df']
 
         st.sidebar.header("Control Panel")
+        st.sidebar.caption("App Version: v1.1.0")
         st.sidebar.button("Clear Cache & Reset Data", on_click=reset_and_clear_cache)
         
         # --- 1. GLOBAL FILTERS ---
